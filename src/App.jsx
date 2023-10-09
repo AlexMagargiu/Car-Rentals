@@ -6,6 +6,7 @@ import Models from "./pages/Models";
 import Testimonials from "./pages/Testimonials";
 import Team from "./pages/Team";
 import Contact from "./pages/Contact";
+import SignIn from "./pages/SignIn";
 import NoPage from "./pages/NoPage";
 
 export default function App() {
@@ -14,16 +15,19 @@ export default function App() {
     <main className="font-roboto">
       <BrowserRouter>
         <Navbar />
-        <Routes>
-          <Route index element={<Home />} />
-          <Route path="/home" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/models" element={<Models />} />
-          <Route path="/testimonials" element={<Testimonials />} />
-          <Route path="/team" element={<Team />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="*" element={<NoPage />} />
-        </Routes>
+        <div className="max-w-screen-xl mx-auto">
+          <Routes>
+            <Route index element={<Home />} />
+            <Route path="/home" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/models" element={<Models />} />
+            <Route path="/testimonials" element={<Testimonials />} />
+            <Route path="/team" element={<Team />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/signIn" element={<SignIn />} />
+            <Route path="*" element={<NoPage />} />
+          </Routes>
+        </div>
       </BrowserRouter>
     </main>
   );
