@@ -6,8 +6,9 @@ export default {
       colors: {
         page: "#F8F8F8",
         primary_text: "#121212",
-        secondary_text: "#FA5F55",
+        secondary_text: "#8D021F",
         accordion: "#343434",
+        option_bg: "#70809030",
       },
     },
     fontFamily: {
