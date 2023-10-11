@@ -12,22 +12,20 @@ import NoPage from "./pages/NoPage";
 export default function App() {
   //icon color #8D021F
   return (
-    <main className="bg-page font-roboto text-primary_text">
+    <main className="font-roboto text-primary_text max-w-screen-xl mx-auto px-6">
       <BrowserRouter>
         <Navbar />
-        <div className="max-w-screen-xl mx-auto px-6">
-          <Routes>
-            <Route index element={<Home />} />
-            <Route path="/home" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            <Route path="/models" element={<Models />} />
-            <Route path="/testimonials" element={<Testimonials />} />
-            <Route path="/team" element={<Team />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/signIn" element={<SignIn />} />
-            <Route path="*" element={<NoPage />} />
-          </Routes>
-        </div>
+        <Routes>
+          <Route index element={<Home />} />
+          <Route path="/home" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/models" element={<Models />} />
+          <Route path="/testimonials" element={<Testimonials />} />
+          <Route path="/team" element={<Team />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/signIn" element={<SignIn />} />
+          <Route path="*" element={<NoPage />} />
+        </Routes>
       </BrowserRouter>
     </main>
   );

@@ -5,7 +5,7 @@ export default {
     extend: {
       colors: {
         page: "#F8F8F8",
-        primary_text: "#36454F",
+        primary_text: "#121212",
         secondary_text: "#FA5F55",
         accordion: "#343434",
       },
