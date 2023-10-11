@@ -12,10 +12,10 @@ import NoPage from "./pages/NoPage";
 export default function App() {
   //icon color #8D021F
   return (
-    <main className="font-roboto">
+    <main className="bg-page font-roboto text-primary_text">
       <BrowserRouter>
         <Navbar />
-        <div className="max-w-screen-xl mx-auto">
+        <div className="max-w-screen-xl mx-auto px-6">
           <Routes>
             <Route index element={<Home />} />
             <Route path="/home" element={<Home />} />

@@ -4,7 +4,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#FA5F55",
+        page: "#F8F8F8",
+        primary_text: "#36454F",
+        secondary_text: "#FA5F55",
         accordion: "#343434",
       },
     },
