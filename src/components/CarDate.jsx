@@ -13,9 +13,9 @@ export default function CarDate(props) {
       </label>
       <input
         id={props.id}
-        value={props.value}
         onChange={props.onChange}
         type="date"
+        placeholder="DD-MM-YYYY"
         className="p-4 rounded-md outline-none w-full"
       ></input>
     </div>

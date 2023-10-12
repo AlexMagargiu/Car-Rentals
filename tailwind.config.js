@@ -9,6 +9,7 @@ export default {
         secondary_text: "#8D021F",
         accordion: "#343434",
         option_bg: "#70809030",
+        error: "#8D021F50",
       },
     },
     fontFamily: {

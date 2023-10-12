@@ -13,9 +13,10 @@ export default function CarLocation(props) {
       </label>
       <select
         id={props.id}
+        onChange={props.onChange}
         className="bg-option_bg p-4 rounded-md outline-none w-full"
       >
-        <option>Select {props.type.toLowerCase()}</option>
+        <option value="">Select {props.type.toLowerCase()}</option>
         <option value="Bucharest">Bucharest</option>
         <option value="Cluj Napoca">Cluj Napoca</option>
         <option value="Timisoara">Timisoara</option>
