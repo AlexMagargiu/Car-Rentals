@@ -25,11 +25,11 @@ export default function Hero() {
           flexible pick-up options and much more
         </p>
       </div>
-      <div className="flex flex-col gap-4 z-40 md:flex-row">
-        <button className="flex items-center justify-center gap-2 bg-secondary_text text-white w-64 py-8 rounded-md md:w-48 md:py-6">
+      <div className="flex flex-col gap-4 z-40 sm:flex-row">
+        <button className="flex items-center justify-center gap-2 bg-secondary_text text-white w-64 py-8 rounded-md sm:w-48 sm:py-6">
           Book Ride <FaRegClock />
         </button>
-        <button className="flex items-center justify-center gap-2 bg-black w-64 py-8 rounded-md text-white md:w-48 md:py-6">
+        <button className="flex items-center justify-center gap-2 bg-black w-64 py-8 rounded-md text-white sm:w-48 sm:py-6">
           Learn More <FaChevronRight />
         </button>
       </div>

@@ -14,7 +14,8 @@ export default function CarLocation(props) {
       <select
         id={props.id}
         onChange={props.onChange}
-        className="bg-option_bg p-4 rounded-md outline-none w-full"
+        className="bg-option_bg border border-border p-4 rounded-md outline-none w-full"
+        required
       >
         <option value="">Select {props.type.toLowerCase()}</option>
         <option value="Bucharest">Bucharest</option>

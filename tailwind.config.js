@@ -10,6 +10,7 @@ export default {
         accordion: "#343434",
         option_bg: "#70809030",
         error: "#8D021F50",
+        border: "#53687870",
       },
     },
     fontFamily: {

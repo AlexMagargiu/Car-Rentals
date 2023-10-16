@@ -15,8 +15,8 @@ export default function CarDate(props) {
         id={props.id}
         onChange={props.onChange}
         type="date"
-        placeholder="DD-MM-YYYY"
-        className="p-4 rounded-md outline-none w-full"
+        className="p-4 rounded-md outline-none w-full border border-border"
+        required
       ></input>
     </div>
   );
