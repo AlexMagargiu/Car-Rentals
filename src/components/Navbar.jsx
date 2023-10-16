@@ -1,10 +1,10 @@
 import { NavLink } from "react-router-dom";
 import logo from "../assets/logo.svg";
-import NavItem from "./NavItem";
+import NavItem from "./Navbar-Components/NavItem";
 import { useState } from "react";
 import { RiMenu2Line } from "react-icons/ri";
 import { FaXmark } from "react-icons/fa6";
-import SignInButton from "./SignInButton";
+import SignInButton from "./Navbar-Components/SignInButton";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);

@@ -1,9 +1,9 @@
-import CarLocation from "./CarLocation";
-import CarDate from "./CarDate";
+import CarLocation from "./BookCar-Components/CarLocation";
+import CarDate from "./BookCar-Components/CarDate";
 import { FaCarSide } from "react-icons/fa6";
 import bookBg from "../assets/bookbg.png";
 import { useState } from "react";
-import ErrorMessage from "./ErrorMessage";
+import ErrorMessage from "./BookCar-Components/ErrorMessage";
 
 export default function BookCar() {
   const [selectedDatePick, setSelectedDatePick] = useState("");
@@ -133,7 +133,6 @@ export default function BookCar() {
           Search
         </button>
       </form>
-      <dialog id="modal"></dialog>
     </section>
   );
 }
