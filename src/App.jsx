@@ -13,7 +13,7 @@ export default function App() {
   //icon color #8D021F
   return (
     <main className="font-roboto text-primary_text max-w-screen-xl mx-auto px-6">
-      <BrowserRouter>
+      <BrowserRouter basename={import.meta.env.DEV ? "/" : "/Car-Rentals/"}>
         <Navbar />
         <Routes>
           <Route index element={<Home />} />
