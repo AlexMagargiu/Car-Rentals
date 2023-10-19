@@ -1,7 +1,7 @@
 import { FaRegClock } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa";
 import heroBg from "../assets/herobg.png";
-import vwarteon from "../assets/vwarteon.png";
+import lexusrc from "../assets/lexusrc.png";
 
 export default function Hero() {
   return (
@@ -12,8 +12,8 @@ export default function Hero() {
       ></img>
       <div className="flex flex-col items-center gap-4 z-40 lg:items-start relative w-full">
         <img
-          src={vwarteon}
-          className="absolute right-[-3rem] z-[-1] top-[-1rem] invisible lg:visible w-[65%]"
+          src={lexusrc}
+          className="absolute right-0 z-[-1] top-[-1rem] invisible lg:visible w-[52.5%]"
         />
         <h4 className="text-2xl">Plan your trip now</h4>
         <h1 className="text-6xl max-w-lg">

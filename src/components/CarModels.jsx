@@ -1,4 +1,4 @@
-import arteon from "../assets/vwarteon.png";
+import rc from "../assets/lexusrc.png";
 import m5 from "../assets/bmwm5.png";
 import xc90 from "../assets/volvoxc90.png";
 import cls from "../assets/mercedescls.png";
@@ -9,7 +9,7 @@ import CarStats from "./CarModels-Components/CarStats";
 
 export default function CarModels() {
   const [buttonClicked, setButtonClicked] = useState({
-    arteon: true,
+    rc: true,
     m5: false,
     xc90: false,
     cls: false,
@@ -19,7 +19,7 @@ export default function CarModels() {
 
   const onClickHandler = (order) => {
     const resetCar = {
-      arteon: false,
+      rc: false,
       m5: false,
       xc90: false,
       cls: false,
@@ -32,30 +32,45 @@ export default function CarModels() {
     });
   };
 
+  const buttonStyle = {
+    padding: "0.75rem 1.5rem 0.75rem 1.5rem",
+    textAlign: "start",
+    backgroundColor: "#70809030",
+    fontWeight: "700",
+    fontSize: "1.25rem",
+    lineHeight: "1.75rem",
+  };
+
   return (
-    <section>
-      <h2>Vehicle Models</h2>
-      <h4>Our rental fleet</h4>
-      <p>
+    <section className="flex flex-col items-center justify-center gap-4">
+      <h2 className="text-xl font-bold">Vehicle Models</h2>
+      <h4 className="text-5xl font-bold text-center">Our rental fleet</h4>
+      <p className="text-center opacity-70">
         Select from our array of exceptional vehicles available for rental,
         perfect for your upcoming adventure or business journey
       </p>
-      <div>
-        <button onClick={() => onClickHandler("arteon")}>
-          Volkswagen Arteon
+      <div className="flex flex-col w-full gap-2 pb-12">
+        <button onClick={() => onClickHandler("rc")} style={buttonStyle}>
+          Lexus RC
         </button>
-        <button onClick={() => onClickHandler("m5")}>BMW M5</button>
-        <button onClick={() => onClickHandler("xc90")}>Volvo XC90</button>
-        <button onClick={() => onClickHandler("cls")}>Mercedes-Benz CLS</button>
-        <button onClick={() => onClickHandler("camaro")}>
+        <button onClick={() => onClickHandler("m5")} style={buttonStyle}>
+          BMW M5
+        </button>
+        <button onClick={() => onClickHandler("xc90")} style={buttonStyle}>
+          Volvo XC90
+        </button>
+        <button onClick={() => onClickHandler("cls")} style={buttonStyle}>
+          Mercedes-Benz CLS
+        </button>
+        <button onClick={() => onClickHandler("camaro")} style={buttonStyle}>
           Chevrolet Camaro
         </button>
-        <button onClick={() => onClickHandler("etron")}>Audi E-Tron GT</button>
+        <button onClick={() => onClickHandler("etron")} style={buttonStyle}>
+          Audi E-Tron GT
+        </button>
       </div>
-      <div>
-        {buttonClicked.arteon && (
-          <img src={arteon} alt="Volkswagen Arteon photo" />
-        )}
+      <div className="flex justify-center">
+        {buttonClicked.rc && <img src={rc} alt="Lexus RC photo" />}
         {buttonClicked.m5 && <img src={m5} alt="BMW M5 photo" />}
         {buttonClicked.xc90 && <img src={xc90} alt="Volvo XC90 photo" />}
         {buttonClicked.cls && <img src={cls} alt="Mercedes-Benz CLS photo" />}
@@ -64,12 +79,12 @@ export default function CarModels() {
         )}
         {buttonClicked.etron && <img src={etron} alt="Audi E-Tron GT photo" />}
       </div>
-      <div>
-        {buttonClicked.arteon && (
+      <div className="flex flex-col items-center justify-center">
+        {buttonClicked.rc && (
           <CarStats
             price="$30"
-            brand="Volkswagen"
-            model="Arteon"
+            brand="Lexus"
+            model="RC"
             year="2020"
             doors="4/5"
             hp="100"
