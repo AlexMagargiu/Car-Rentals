@@ -10,7 +10,7 @@ export default function CarStats(props) {
         <CarStatsLine text="Producer" information={props.brand} />
         <CarStatsLine text="Model" information={props.model} />
         <CarStatsLine text="Year" information={props.year} />
-        <CarStatsLine text="Doors" information={props.doors} />
+        <CarStatsLine text="Engine" information={props.engine} />
         <CarStatsLine text="HP" information={props.hp} />
         <CarStatsLine text="Transmission" information={props.transmission} />
         <CarStatsLine text="Fuel Type" information={props.fuel} />
