@@ -5,7 +5,7 @@ import lexuses from "../assets/lexuses.png";
 
 export default function Hero() {
   return (
-    <section className="flex flex-col items-center h-screen justify-center gap-4 font-bold text-xl text-center lg:items-start lg:text-left">
+    <section className="flex flex-col items-center h-screen justify-center gap-4 font-bold text-xl text-center lg:items-start lg:text-left max-w-screen-xl mx-auto px-6">
       <img
         src={heroBg}
         className="absolute right-0 top-0 z-10 invisible lg:visible"

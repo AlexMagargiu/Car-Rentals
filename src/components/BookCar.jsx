@@ -61,7 +61,7 @@ export default function BookCar() {
 
   return (
     <section
-      className="flex flex-col text-lg p-4 bg-white shadow-[0_10px_20px_0_rgba(0,0,0,.1);] md:z-50 md:relative sm:pt-8 sm:pb-14 sm:px-12"
+      className="flex flex-col text-lg p-4 bg-white shadow-[0_10px_20px_0_rgba(0,0,0,.1);] md:z-50 md:relative sm:pt-8 sm:pb-14 sm:px-12 max-w-screen-xl mx-auto px-6"
       style={backgroundImage}
     >
       <h2 className="font-extrabold text-2xl p-4 md:text-3xl">Book a car</h2>

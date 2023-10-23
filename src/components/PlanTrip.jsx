@@ -4,7 +4,7 @@ import carWind from "../assets/carwind.png";
 
 export default function PlanTrip() {
   return (
-    <section className="flex flex-col items-center py-16 gap-4 lg:gap-2">
+    <section className="flex flex-col items-center py-16 gap-4 lg:gap-2 max-w-screen-xl mx-auto px-6">
       <h4 className="font-bold text-3xl text-center">Plan your trip now</h4>
       <h2 className="font-bold text-5xl text-center leading-tight">
         Quick & easy car rental

@@ -43,7 +43,7 @@ export default function CarModels() {
   };
 
   return (
-    <section className="flex flex-col items-center justify-center gap-4 py-28">
+    <section className="flex flex-col items-center justify-center gap-4 py-28 max-w-screen-xl mx-auto px-6">
       <h2 className="text-xl font-bold">Vehicle Models</h2>
       <h4 className="text-5xl font-bold text-center">Our rental fleet</h4>
       <p className="text-center opacity-70 max-w-xl">
