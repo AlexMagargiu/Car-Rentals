@@ -60,79 +60,81 @@ export default function BookCar() {
   }
 
   return (
-    <section
-      className="flex flex-col text-lg p-4 bg-white shadow-[0_10px_20px_0_rgba(0,0,0,.1);] md:z-50 md:relative sm:pt-8 sm:pb-14 sm:px-12 max-w-screen-xl mx-auto px-6"
-      style={backgroundImage}
-    >
-      <h2 className="font-extrabold text-2xl p-4 md:text-3xl">Book a car</h2>
-      {!allFields && (
-        <ErrorMessage
-          title="All fields required"
-          onClick={() => setAllFields(true)}
-        />
-      )}
-      {!compareDates && (
-        <ErrorMessage
-          title="Check selected dates"
-          onClick={() => setCompareDates(true)}
-        />
-      )}
-      <form className="flex flex-col sm:grid sm:grid-cols-2 sm:gap-6 md:grid-cols-3">
-        <div>
-          <label
-            htmlFor="cars"
-            className="flex items-center text-xl font-bold my-3"
+    <section className="max-w-screen-xl mx-auto px-6">
+      <div
+        className="flex flex-col text-lg p-4 bg-white shadow-[0_10px_20px_0_rgba(0,0,0,.1);] md:z-50 md:relative sm:pt-8 sm:pb-14 sm:px-12"
+        style={backgroundImage}
+      >
+        <h2 className="font-extrabold text-2xl p-4 md:text-3xl">Book a car</h2>
+        {!allFields && (
+          <ErrorMessage
+            title="All fields required"
+            onClick={() => setAllFields(true)}
+          />
+        )}
+        {!compareDates && (
+          <ErrorMessage
+            title="Check selected dates"
+            onClick={() => setCompareDates(true)}
+          />
+        )}
+        <form className="flex flex-col sm:grid sm:grid-cols-2 sm:gap-6 md:grid-cols-3">
+          <div>
+            <label
+              htmlFor="cars"
+              className="flex items-center text-xl font-bold my-3"
+            >
+              <FaCarSide className="mr-3" />
+              Select car model
+              <span className="text-secondary_text">*</span>
+            </label>
+            <select
+              id="cars"
+              onChange={handleCarChange}
+              className="bg-option_bg p-4 rounded-md outline-none w-full border border-border"
+              required
+            >
+              <option value="">Select car model</option>
+              <option value="Arteon">Volkswagen Arteon</option>
+              <option value="M5">BMW M5</option>
+              <option value="XC90">Volvo XC90</option>
+              <option value="CLS">Mercedes-Benz CLS</option>
+              <option value="Camaro">Chevrolet Camaro</option>
+              <option value="ETron">Audi E-Tron GT</option>
+            </select>
+          </div>
+          <CarLocation
+            id="pick"
+            type="Pick up location"
+            onChange={handleLocationChange}
+          />
+          <CarLocation
+            id="drop"
+            type="Drop off location"
+            onChange={handleLocationChange}
+          />
+          <CarDate
+            id="pickDate"
+            type="Pick up date"
+            onChange={handleDateChangePick}
+          />
+          <CarDate
+            id="dropDate"
+            type="Drop off date"
+            onChange={handleDateChangeDrop}
+          />
+          <button
+            type="submit"
+            className="w-full font-bold text-xl text-white bg-secondary_text border border-secondary_text rounded-md mt-4 py-4 sm:mt-0 sm:self-end"
+            onClick={() => {
+              checkFields();
+              checkDates();
+            }}
           >
-            <FaCarSide className="mr-3" />
-            Select car model
-            <span className="text-secondary_text">*</span>
-          </label>
-          <select
-            id="cars"
-            onChange={handleCarChange}
-            className="bg-option_bg p-4 rounded-md outline-none w-full border border-border"
-            required
-          >
-            <option value="">Select car model</option>
-            <option value="Arteon">Volkswagen Arteon</option>
-            <option value="M5">BMW M5</option>
-            <option value="XC90">Volvo XC90</option>
-            <option value="CLS">Mercedes-Benz CLS</option>
-            <option value="Camaro">Chevrolet Camaro</option>
-            <option value="ETron">Audi E-Tron GT</option>
-          </select>
-        </div>
-        <CarLocation
-          id="pick"
-          type="Pick up location"
-          onChange={handleLocationChange}
-        />
-        <CarLocation
-          id="drop"
-          type="Drop off location"
-          onChange={handleLocationChange}
-        />
-        <CarDate
-          id="pickDate"
-          type="Pick up date"
-          onChange={handleDateChangePick}
-        />
-        <CarDate
-          id="dropDate"
-          type="Drop off date"
-          onChange={handleDateChangeDrop}
-        />
-        <button
-          type="submit"
-          className="w-full font-bold text-xl text-white bg-secondary_text border border-secondary_text rounded-md mt-4 py-4 sm:mt-0 sm:self-end"
-          onClick={() => {
-            checkFields();
-            checkDates();
-          }}
-        >
-          Search
-        </button>
-      </form>
+            Search
+          </button>
+        </form>
+      </div>
     </section>
   );
 }
