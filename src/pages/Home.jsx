@@ -4,6 +4,7 @@ import PlanTrip from "../components/PlanTrip";
 import CarModels from "../components/CarModels";
 import Banner from "../components/Banner";
 import WhyUs from "../components/WhyUs";
+import Testimonials from "../components/Testimonials";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
       <CarModels />
       <Banner />
       <WhyUs />
+      <Testimonials />
     </section>
   );
 }
