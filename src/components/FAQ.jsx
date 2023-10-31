@@ -14,7 +14,7 @@ export default function FAQ() {
   }
 
   return (
-    <section className="flex flex-col items-center pb-28 max-w-screen-xl mx-auto px-6 gap-16">
+    <section className="flex flex-col items-center pb-28 max-w-screen-md mx-auto px-6 gap-16">
       <div className="flex flex-col items-center gap-3 text-center">
         <h4 className="text-3xl font-bold">FAQ</h4>
         <h2 className="text-5xl font-bold leading-tight">
@@ -24,7 +24,7 @@ export default function FAQ() {
           Answers to common concerns and inquiries
         </p>
       </div>
-      <div className="shadow-[0_5px_30px_0_rgba(0,0,0,0.35)]">
+      <div className="w-full shadow-[0_5px_30px_0_rgba(0,0,0,0.35)]">
         {questionData.map((data, id) => (
           <Accordion
             key={id}
