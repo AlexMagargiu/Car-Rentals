@@ -12,6 +12,7 @@ export default {
         error: "#8D021F50",
         border: "#53687870",
         banner: "#2d2d2d",
+        border_faq: "#12121220",
       },
     },
     fontFamily: {

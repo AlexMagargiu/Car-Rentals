@@ -5,6 +5,7 @@ import CarModels from "../components/CarModels";
 import Banner from "../components/Banner";
 import WhyUs from "../components/WhyUs";
 import Testimonials from "../components/Testimonials";
+import FAQ from "../components/FAQ";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <Banner />
       <WhyUs />
       <Testimonials />
+      <FAQ />
     </section>
   );
 }
