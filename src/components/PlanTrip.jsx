@@ -13,7 +13,7 @@ export default function PlanTrip() {
         <div className="flex flex-col items-center gap-2">
           <img src={carCheck} alt="car with a checkmark"></img>
           <h4 className="font-bold text-2xl">Select Car</h4>
-          <p className="text-center max-w-[12rem]">
+          <p className="text-center max-w-[12rem] opacity-50">
             Our extensive selection of vehicles caters to a diverse spectrum of
             driving requirements, ensuring that we have the ideal automobile to
             match your specific needs.
@@ -21,10 +21,10 @@ export default function PlanTrip() {
         </div>
         <div className="flex flex-col items-center gap-2">
           <img src={operator} alt="operator support"></img>
-          <h4 className="font-bold text-2xl">
+          <h4 className="font-bold text-2xl ">
             Contact <br></br> Operator
           </h4>
-          <p className="text-center max-w-[12rem]">
+          <p className="text-center max-w-[12rem] opacity-50">
             Our team of well-informed and amiable operators is prepared to
             provide assistance with any inquiries or issues you may have,
             ensuring you have the support you need.
@@ -33,7 +33,7 @@ export default function PlanTrip() {
         <div className="flex flex-col items-center gap-2">
           <img src={carWind} alt="car driving"></img>
           <h4 className="font-bold text-2xl">Let's Drive</h4>
-          <p className="text-center max-w-[12rem]">
+          <p className="text-center max-w-[12rem] opacity-50">
             Whether you're embarking on a journey along the open road or
             navigating city streets, our comprehensive selection of vehicles
             ensures that you're fully equipped with the perfect car for your

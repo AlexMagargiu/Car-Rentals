@@ -20,7 +20,7 @@ export default function Hero() {
           Save <span className="text-secondary_text">big</span> with our car
           rental
         </h1>
-        <p className="text-lg font-light opacity-70 max-w-lg">
+        <p className="text-lg font-light opacity-50 max-w-lg">
           Rent the car of your dreams. Unbeatable prices, unlimited miles,
           flexible pick-up options and much more
         </p>

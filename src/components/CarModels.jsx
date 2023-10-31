@@ -46,7 +46,7 @@ export default function CarModels() {
     <section className="flex flex-col items-center justify-center gap-4 py-28 max-w-screen-xl mx-auto px-6">
       <h2 className="text-xl font-bold">Vehicle Models</h2>
       <h4 className="text-5xl font-bold text-center">Our rental fleet</h4>
-      <p className="text-center opacity-70 max-w-xl">
+      <p className="text-center opacity-50 max-w-xl">
         Select from our array of exceptional vehicles available for rental,
         perfect for your upcoming adventure or business journey
       </p>
