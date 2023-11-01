@@ -1,13 +1,13 @@
-import Hero from "../components/Hero";
-import BookCar from "../components/BookCar";
-import PlanTrip from "../components/PlanTrip";
-import CarModels from "../components/CarModels";
-import Banner from "../components/Banner";
-import WhyUs from "../components/WhyUs";
-import Testimonials from "../components/Testimonials";
-import FAQ from "../components/FAQ";
-import Footer from "../components/Footer";
-import OurApp from "../components/OurApp";
+import Hero from "../components/Home-Components/Hero";
+import BookCar from "../components/Home-Components/BookCar";
+import PlanTrip from "../components/Home-Components/PlanTrip";
+import CarModels from "../components/Home-Components/CarModels";
+import Banner from "../components/Home-Components/Banner";
+import WhyUs from "../components/Home-Components/WhyUs";
+import Testimonials from "../components/Home-Components/Testimonials";
+import FAQ from "../components/Home-Components/FAQ";
+import OurApp from "../components/Home-Components/OurApp";
+import Footer from "../components/Universal-Components/Footer";
 
 export default function Home() {
   return (

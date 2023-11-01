@@ -1,6 +1,6 @@
 import Reviews from "./Testimonials-Components/Reviews";
-import johndoe from "../assets/johndoe.jpg";
-import janedoe from "../assets/janedoe.jpg";
+import johndoe from "../../assets/johndoe.jpg";
+import janedoe from "../../assets/janedoe.jpg";
 
 export default function Testimonials() {
   return (

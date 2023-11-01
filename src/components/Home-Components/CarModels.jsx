@@ -1,9 +1,9 @@
-import es from "../assets/lexuses.png";
-import m5 from "../assets/bmwm5.png";
-import xc90 from "../assets/volvoxc90.png";
-import cls from "../assets/mercedescls.png";
-import camaro from "../assets/chevycamaro.png";
-import etron from "../assets/audietron.png";
+import es from "../../assets/lexuses.png";
+import m5 from "../../assets/bmwm5.png";
+import xc90 from "../../assets/volvoxc90.png";
+import cls from "../../assets/mercedescls.png";
+import camaro from "../../assets/chevycamaro.png";
+import etron from "../../assets/audietron.png";
 import { useState } from "react";
 import CarStats from "./CarModels-Components/CarStats";
 

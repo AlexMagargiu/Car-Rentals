@@ -1,6 +1,6 @@
-import carCheck from "../assets/carcheck.png";
-import operator from "../assets/operator.png";
-import carWind from "../assets/carwind.png";
+import carCheck from "../../assets/carcheck.png";
+import operator from "../../assets/operator.png";
+import carWind from "../../assets/carwind.png";
 
 export default function PlanTrip() {
   return (

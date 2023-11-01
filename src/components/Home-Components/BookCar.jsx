@@ -1,7 +1,7 @@
 import CarLocation from "./BookCar-Components/CarLocation";
 import CarDate from "./BookCar-Components/CarDate";
 import { FaCarSide } from "react-icons/fa6";
-import bookBg from "../assets/bookbg.png";
+import bookBg from "../../assets/bookbg.png";
 import { useState } from "react";
 import ErrorMessage from "./BookCar-Components/ErrorMessage";
 

@@ -1,8 +1,8 @@
-import fleet from "../assets/fleet.png";
+import fleet from "../../assets/fleet.png";
 import { FaChevronRight } from "react-icons/fa6";
-import crosscountry from "../assets/crosscountry.png";
-import money from "../assets/money.png";
-import money2 from "../assets/money2.png";
+import crosscountry from "../../assets/crosscountry.png";
+import money from "../../assets/money.png";
+import money2 from "../../assets/money2.png";
 
 export default function WhyUs() {
   return (

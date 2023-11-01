@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { questionData } from "../questionData";
+import { questionData } from "../../questionData";
 import Accordion from "./FAQ-Components/Accordion";
 
 export default function FAQ() {

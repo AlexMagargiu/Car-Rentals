@@ -1,7 +1,7 @@
 import { FaRegClock } from "react-icons/fa";
 import { FaChevronRight } from "react-icons/fa";
-import heroBg from "../assets/herobg.png";
-import lexuses from "../assets/lexuses.png";
+import heroBg from "../../assets/herobg.png";
+import lexuses from "../../assets/lexuses.png";
 
 export default function Hero() {
   return (
