@@ -48,7 +48,7 @@ export default function Navbar() {
 
   return (
     <>
-      <nav className="absolute top-0 left-0 right-0 flex items-center justify-between py-2 px-6 font-bold z-50 max-w-screen-xl mx-auto ">
+      <nav className="absolute top-0 left-0 right-0 flex items-center justify-between py-2 px-6 font-bold z-50 max-w-screen-xl mx-auto">
         <NavLink to="/home">
           <img src={logo} className="w-20 h-20"></img>
         </NavLink>

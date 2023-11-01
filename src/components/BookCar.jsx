@@ -60,7 +60,7 @@ export default function BookCar() {
   }
 
   return (
-    <section className="max-w-screen-xl mx-auto px-6">
+    <section className="max-w-screen-xl px-6 mx-auto">
       <div
         className="flex flex-col text-lg p-4 bg-white shadow-[0_10px_20px_0_rgba(0,0,0,.1);] md:z-50 md:relative sm:pt-8 sm:pb-14 sm:px-12"
         style={backgroundImage}
