@@ -3,8 +3,8 @@ import { AiFillMail } from "react-icons/ai";
 
 export default function Footer() {
   return (
-    <section className="max-w-screen-xl mx-auto px-6 flex flex-col items-center gap-16 pb-24">
-      <div className="flex flex-col items-center text-center gap-2">
+    <section className="max-w-screen-xl mx-auto px-6 grid grid-cols-1 items-center gap-16 pb-24 md:grid-cols-2 xl:flex xl:w-full xl:justify-between">
+      <div className="flex flex-col items-center text-center gap-8">
         <h4 className="text-2xl">
           <span className="font-bold">CAR</span> Rental
         </h4>
@@ -12,15 +12,15 @@ export default function Footer() {
           We offer a big range of vehicles for all your driving needs. We have
           the perfect car to meet your needs.
         </p>
-      </div>
-      <div className="flex flex-col text-lg">
-        <div className="flex items-center gap-4 font-bold">
-          <FaPhoneAlt />
-          0712 345 678
-        </div>
-        <div className="flex items-center gap-4 font-bold">
-          <AiFillMail />
-          carrental@gmail.com
+        <div className="flex flex-col text-lg">
+          <div className="flex items-center gap-4 font-bold">
+            <FaPhoneAlt />
+            0712 345 678
+          </div>
+          <div className="flex items-center gap-4 font-bold">
+            <AiFillMail />
+            carrental@gmail.com
+          </div>
         </div>
       </div>
       <div className="flex flex-col items-center gap-2 text-lg">
@@ -42,9 +42,9 @@ export default function Footer() {
         <input
           type="text"
           placeholder="Enter Email Address"
-          className="w-full py-4 px-8 bg-border_faq outline-none"
+          className="w-full py-4 px-8 bg-border_faq outline-none max-w-lg"
         ></input>
-        <button className="flex justify-center gap-2 text-white bg-secondary_text w-full py-4 font-bold">
+        <button className="flex justify-center gap-2 text-white bg-secondary_text w-full py-4 font-bold max-w-lg">
           Submit
         </button>
       </div>
