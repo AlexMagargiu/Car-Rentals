@@ -3,7 +3,7 @@ import { AiFillMail } from "react-icons/ai";
 
 export default function Footer() {
   return (
-    <section className="max-w-screen-xl mx-auto px-6 grid grid-cols-1 gap-16 pb-24 md:grid-cols-2 xl:flex xl:w-full xl:justify-between xl:items-start">
+    <section className="max-w-screen-xl mx-auto px-6 grid grid-cols-1 gap-16 py-24 md:grid-cols-2 xl:flex xl:w-full xl:justify-between xl:items-start">
       <div className="flex flex-col items-center text-center gap-8 md:items-start md:text-start">
         <h4 className="text-2xl">
           <span className="font-bold">CAR</span> Rental

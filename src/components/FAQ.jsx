@@ -14,7 +14,7 @@ export default function FAQ() {
   }
 
   return (
-    <section className="flex flex-col items-center pb-28 max-w-screen-md mx-auto px-6 gap-16">
+    <section className="flex flex-col items-center pb-28 max-w-screen-lg mx-auto px-6 gap-16">
       <div className="flex flex-col items-center gap-3 text-center">
         <h4 className="text-3xl font-bold">FAQ</h4>
         <h2 className="text-5xl font-bold leading-tight">
