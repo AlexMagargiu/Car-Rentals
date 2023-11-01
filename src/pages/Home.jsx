@@ -6,6 +6,7 @@ import Banner from "../components/Banner";
 import WhyUs from "../components/WhyUs";
 import Testimonials from "../components/Testimonials";
 import FAQ from "../components/FAQ";
+import Footer from "../components/Footer";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
       <WhyUs />
       <Testimonials />
       <FAQ />
+      <Footer />
     </section>
   );
 }
