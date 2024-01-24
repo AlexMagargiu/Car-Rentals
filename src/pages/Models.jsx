@@ -11,7 +11,7 @@ import Footer from "../components/Universal-Components/Footer";
 export default function Models() {
   return (
     <section className="flex flex-col items-center pt-36 lg:pt-60">
-      <div className="flex flex-col items-center justify-center gap-8 md:flex-row md:flex-wrap md:gap-16 md:max-w-6xl">
+      <div className="flex flex-col items-center justify-center gap-8 md:flex-row md:flex-wrap md:gap-16 md:max-w-6xl mb-36">
         <CarModel
           image={lexusEsPhoto}
           name="Lexus"
