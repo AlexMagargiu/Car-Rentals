@@ -2,10 +2,10 @@ import Reviews from "./Testimonials-Components/Reviews";
 import johndoe from "../../assets/johndoe.jpg";
 import janedoe from "../../assets/janedoe.jpg";
 
-export default function Testimonials() {
+export default function TestimonialsComp() {
   return (
-    <section className="flex flex-col items-center pb-28 max-w-screen-xl mx-auto px-6 gap-16">
-      <div className="flex flex-col items-center text-center gap-3">
+    <section className="flex flex-col items-center max-w-screen-xl gap-16 px-6 mx-auto pb-28">
+      <div className="flex flex-col items-center gap-3 text-center">
         <h4 className="text-2xl font-bold">Reviewed by People</h4>
         <h2 className="text-5xl font-bold">Client's Testimonials</h2>
         <p className="max-w-2xl opacity-50">
