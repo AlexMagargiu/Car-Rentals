@@ -1,5 +1,6 @@
 import { FaEnvelopeOpen } from "react-icons/fa6";
 import { useState } from "react";
+import { insertFeedback } from "../../../MongoDB";
 import axios from "axios";
 
 export default function ContactFrom() {
@@ -13,13 +14,7 @@ export default function ContactFrom() {
   const handleSubmit = (event) => {
     event.preventDefault();
     console.log(inputs);
-
-    axios
-      .post("http://localhost/api/user/save", inputs)
-      .then(function (response) {
-        console.log(response.data);
-        navigate("/");
-      });
+    insertFeedback({ user: inputs });
   };
 
   return (
