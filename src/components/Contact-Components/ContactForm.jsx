@@ -55,7 +55,7 @@ export default function ContactFrom() {
       ></textarea>
       <button className="flex items-center justify-center gap-2 px-8 py-4 text-lg text-white bg-secondary_text rounded-xl">
         <FaEnvelopeOpen />
-        Send Message
+        Send Messag
       </button>
     </form>
   );
